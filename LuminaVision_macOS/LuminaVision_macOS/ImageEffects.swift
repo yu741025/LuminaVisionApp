@@ -2,7 +2,7 @@
 //  ImageEffects.swift
 //  LuminaVision_macOS
 //
-//  Created by 游述宇 on 2025/2/6.
+//  Created by YOU SHU-YU on 2025/2/6.
 //
 
 import SwiftUI
