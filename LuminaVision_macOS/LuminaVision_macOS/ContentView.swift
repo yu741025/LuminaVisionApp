@@ -54,7 +54,6 @@ struct ContentView: View {
             }
             .padding()
             
-            // 溫柔的操作按鈕
             HStack(spacing: 20) {
                 Button(action: openImagePicker) {
                     Label("選擇照片", systemImage: "photo.on.rectangle")
