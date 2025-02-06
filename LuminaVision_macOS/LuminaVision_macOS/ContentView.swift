@@ -16,13 +16,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            // 充滿愛意的標題
+
             Text("LuminaVision")
                 .font(.system(size: 32, weight: .light))
                 .foregroundColor(.brown)
                 .padding(.top)
             
-            // 溫暖的相片展示窗口
+
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color(.windowBackgroundColor))
@@ -69,7 +69,7 @@ struct ContentView: View {
                 .disabled(selectedImage == nil)
             }
             
-            // 充滿藝術感的濾鏡按鈕組
+
             VStack(spacing: 15) {
                 Text("為回憶添加色彩")
                     .font(.headline)
@@ -136,13 +136,13 @@ struct ContentView: View {
         savePanel.allowedContentTypes = [UTType.jpeg, UTType.png]  // 修改這裡
         savePanel.nameFieldStringValue = "我們的美好回憶.jpg"
         
-        savePanel.begin { response in  // 確保我們可以在閉包中存取屬性
+        savePanel.begin { response in
             if response == .OK, let url = savePanel.url {
                 guard let data = imageToSave.tiffRepresentation,
                       let bitmap = NSBitmapImageRep(data: data),
                       let imageData = bitmap.representation(using: .jpeg, properties: [:]) else { return }
                 
-                do {  // 加入錯誤處理
+                do {  
                     try imageData.write(to: url)
                 } catch {
                     print("保存時發生錯誤：\(error)")
