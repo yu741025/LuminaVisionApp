@@ -1,7 +1,7 @@
 # LuminaVision
 
 > Elevate your photos with artistic sophistication through our innovative image processing application.
-![Uploading LuminaVisionShowCase.gif…]()
+![LuminaVisionShowCase](LuminaVisionShowCase.gif)
 
 ## 🌟 Overview
 
